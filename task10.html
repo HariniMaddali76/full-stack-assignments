@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            padding: 200px;
+        }
+
+        table {
+            width: 100%;
+            height:200px;
+            border-collapse:nothing;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 2px solid greenyellow;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color:lightcoral;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Timetable</h1>
+
+    <table>
+        <caption>Weekdays Timetable</caption>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>9:00-10:00</th>
+                <th>10:00-10:50</th>
+                <th>10:50-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-12:50</th>
+                <th>12:50-1:50</th>
+                <th>1:50-2:30</th>
+                <th>2:30-3:40</th>
+                <th>3:40-4:30</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>MONDAY</th>
+                <td>DBMS</td>
+                <td>os</td>
+                <th rowspan="6">BREAK</th>
+                <td>P&S</td>
+                <td>DBMS</td>
+                <th rowspan="6">LUNCH</th>
+                <td>os</td>
+                <td colspan="2">CDC lab </td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>DBMS</td>
+                <td>os</td>
+                <td>SS</td>
+                <td>P&S</td>
+                <td>FSD</td>
+                <td colspan="2">CDC lab </td>
+            </tr>
+            <tr>
+                <th>WEDNESDAY</th>
+                <td>sE</td>
+                <td>os</td>
+                <td>DBMS</td>
+                <td>P&S</td>
+                <td>FSd</td>
+                <td>DBMS</td>
+                <td>DT&I</td>
+
+            </tr>
+            
+            <tr>
+                <th>THURSDAY</th>
+                <td colspan="2">DBMS LAB</td>
+                <td>DBMS</td>
+                <td>P&S</td>
+                <td>Math</td>
+                <td colspan="2"> FSD lab </td>
+                
+            </tr>
+          
+            
+            <tr>
+                <th>FRIDAY</th>
+                <td colspan="2">OS LAB</td>
+                <td colspan="2">DT&I</td>
+                <td>Math</td>
+                <td>FSD</td>
+                <td>DT&I</td>
+            </tr>
+           
+            <tr>
+                <th>SATURDAY</th>
+                <td colspan="2">FSD</td>
+                <td>os</td>
+                <td>DBMS</td>
+                <td>P&S</td>
+                <td colspan="2">CDC lab</td>
+                
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
