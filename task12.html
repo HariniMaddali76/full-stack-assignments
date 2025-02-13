@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Place Your Order - Delicious Restaurant</title>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: pink;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color:lightcoral;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Order Your Meal at Delicious Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Order Form</h2>
+        <form action="submit_order.php" method="POST">
+            <!-- Customer Details Section -->
+            <section>
+                <h3>Customer Details</h3>
+                <label for="name">Full Name:</label>
+                <input type="name"><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" ><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type=phone ><br><br>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id=address></textarea><br><br>
+            </section>
+
+            <!-- Menu Items Section -->
+            <section>
+                <h3>Menu Items</h3>
+                <label>Panipuri ($5.99):</label>
+                <input type="number"  name="Panipuri" min="0" value="0"><br><br>
+
+                <label >Biryani ($3.99):</label>
+                <input type="number"  name="Biryani" min="0" value="0"><br><br>
+
+                <label> Chat ($14.99):</label>
+                <input type="number"  name="Chat" min="0" value="0"><br><br>
+
+                <label> Pasta Primavera ($12.99):</label>
+                <input type="number"  name="pasta_primavera" min="0" value="0"><br><br>
+
+                <label >pizza ($6.99):</label>
+                <input type="number" name="Pizza" min="0" value="0"><br><br>
+
+                <label>kit kat Ice Cream ($4.99):</label>
+                <input type="number"  name=" kit kat ice_cream" min="0" value="0"><br><br>
+            </section>
+
+            <!-- Submit Button -->
+            <section>
+                <input type="submit" value="Place Order">
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p> 2025 Delicious Restaurant | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
